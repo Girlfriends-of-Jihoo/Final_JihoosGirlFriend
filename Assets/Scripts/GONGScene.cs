@@ -15,9 +15,9 @@ public class GONGScene : MonoBehaviour
     {
         if (!chatSystem.isDialogue)
         {
-        modal.SetActive(true);
-        mapButton.SetActive(true);
-        mapAnimator.SetBool("stop", true);
+            modal.SetActive(true);
+            mapButton.SetActive(true);
+            mapAnimator.SetBool("stop", true);
         }
     }
 
