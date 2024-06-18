@@ -4692,10 +4692,10 @@ GameObject:
   - component: {fileID: 220502634}
   - component: {fileID: 220502633}
   - component: {fileID: 220502632}
-  - component: {fileID: 220502631}
   - component: {fileID: 220502630}
   - component: {fileID: 220502629}
   - component: {fileID: 220502628}
+  - component: {fileID: 220502636}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Player
@@ -4841,19 +4841,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &220502631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220502627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb3f5f90063321d419cbf7d4d7416e1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 743014709}
 --- !u!135 &220502632
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4941,6 +4928,20 @@ Transform:
   - {fileID: 1725661057}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &220502636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220502627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3f5f90063321d419cbf7d4d7416e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 743014709}
+  player: {fileID: 220502627}
 --- !u!1 &220897188
 GameObject:
   m_ObjectHideFlags: 0
