@@ -9,7 +9,8 @@ class ChatManager : MonoBehaviour
     public bool starbucks2 = false;
     public bool stair1 = false;
     public bool stair2 = false;
-    public bool library = false;
+    public bool media1 = false;
+    public bool media2 = false;
     public bool gong1 = false;
     public bool gong2 = false;
 

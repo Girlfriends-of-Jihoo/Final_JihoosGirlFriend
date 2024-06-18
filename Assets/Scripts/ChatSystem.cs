@@ -28,7 +28,7 @@ public class ChatSystem : MonoBehaviour
     private string ECC = "ECC";
     private string STARBUCKS = "inside_ECC_B4";
     private string STAIR = "inside_ECC";
-    private string LIBRARY = "Library";
+    private string LIBRARY = "inside_Library";
     private string GONG = "inside_GONG_SIN_B2";
 
     public void ShowDialogue()
@@ -142,7 +142,14 @@ public class ChatSystem : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == LIBRARY)
         {
-            ChatManager.manager.library = true;
+            if (InsideSceneManager.manager.CheckIsNavigationEnd())
+            {
+                ChatManager.manager.media2 = true;
+            }
+            else
+            {
+                ChatManager.manager.media1 = true;
+            }
         }
         else if (SceneManager.GetActiveScene().name == GONG)
         {
@@ -177,7 +184,7 @@ public class ChatSystem : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == LIBRARY)
         {
-            return ChatManager.manager.library;
+            return ChatManager.manager.media1 && ChatManager.manager.media2;
         }
         else if (SceneManager.GetActiveScene().name == GONG)
         {
