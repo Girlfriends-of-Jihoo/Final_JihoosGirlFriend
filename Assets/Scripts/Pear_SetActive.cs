@@ -13,6 +13,7 @@ public class Pear_SetActive : MonoBehaviour
     {
         SetNavigateEnd();
         Pear.SetActive(true);
+        Debug.Log("È°¼ºÈ­");
     }
 
     private void SetNavigateEnd()
