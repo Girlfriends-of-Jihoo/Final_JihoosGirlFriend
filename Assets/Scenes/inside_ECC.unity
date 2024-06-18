@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18029787, g: 0.22574161, b: 0.30695823, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028481, g: 0.22571452, b: 0.30692214, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6180,6 +6180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coneAnimator: {fileID: 372237905}
+  cone: {fileID: 372237898}
   mapAnimator: {fileID: 1838844659}
   stampAnimator: {fileID: 738108178}
   mapButton: {fileID: 1838844656}
@@ -25883,15 +25884,15 @@ MonoBehaviour:
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "\uC789\uC5EC\uACC4\uB2E8\uC740 \uC5B4\uB560\uC5B4? \uB215\uACE0\uC2F6\uC9C0
       \uC54A\uC558\uB2C8?"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "\uB300\uD654 2"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "\uB300\uD654 3"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   npcDialogue: {fileID: 1420030507}
   userDialogue: {fileID: 1642344928}
@@ -35224,6 +35225,74 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1873566537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1873566540}
+  - component: {fileID: 1873566539}
+  - component: {fileID: 1873566538}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1873566538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873566537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1873566539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873566537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1873566540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873566537}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1885570710
 Mesh:
   m_ObjectHideFlags: 0
@@ -39134,7 +39203,7 @@ MonoBehaviour:
     sentences: "\uBAA9\uC801\uC9C0 \uB9C8\uCEE4\uB97C \uD074\uB9AD\uD558\uBA74 \uBAA9\uC801\uC9C0\uAE4C\uC9C0
       \uAC00\uB294 \uBC29\uD5A5\uC744 \uD655\uC778\uD560 \uC218 \uC788\uB294 \uCE74\uBA54\uB77C\uAC00
       \uC2DC\uC791\uB420\uAC70\uC57C!"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   npcDialogue: {fileID: 2140034637}
   userDialogue: {fileID: 1642344928}
@@ -39160,3 +39229,4 @@ SceneRoots:
   - {fileID: 834203608}
   - {fileID: 633505898}
   - {fileID: 352462304}
+  - {fileID: 1873566540}

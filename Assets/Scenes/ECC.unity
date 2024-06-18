@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18029787, g: 0.22574161, b: 0.30695823, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028481, g: 0.22571452, b: 0.30692214, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -965,38 +965,38 @@ MonoBehaviour:
   dialogues:
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "\uC5EC\uAE30\uAC00 \uBC14\uB85C ecc\uC57C!"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "ecc\uB294 \uAD00\uAD11\uAC1D\uB3C4 \uB9CE\uC774 \uCC3E\uB294 \uC774\uD654\uC758
       \uB79C\uB4DC\uB9C8\uD06C\uB77C\uACE0 \uD560 \uC218 \uC788\uC9C0!"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "\uC815\uBB38\uC5D0\uC11C \uAC00\uC7A5 \uBA3C\uC800 \uBCF4\uC774\uB294
       \uD070 \uAC74\uBB3C\uB85C \uC9C1\uC9C4\uB9CC \uD558\uBA74 \uC27D\uAC8C \uB3C4\uCC29\uD560
       \uC218 \uC788\uC5B4."
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "ecc\uC5D0\uB294 \uC2A4\uD0C0\uBC85\uC2A4, \uD3B8\uC758\uC810, \uAE30\uB150\uD488\uC0F5
       \uADF8\uB9AC\uACE0 \uC789\uC5EC\uACC4\uB2E8 \uB4F1"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "\uC2DC\uAC04\uC744 \uBCF4\uB0BC \uC218 \uC788\uB294 \uC5EC\uB7EC
       \uACF5\uAC04\uB4E4\uC774 \uC788\uC5B4!!"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "\uC774 \uC911 \uB450 \uACF5\uAC04\uC5D0 \uC2A4\uD0EC\uD504\uB97C
       \uCC0D\uC744 \uC218 \uC788\uB3C4\uB85D \uC900\uBE44\uD574\uB480\uC5B4."
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "\uB098\uB294 \uB530\uB77C\uAC00\uC9C0 \uC54A\uC744\uD14C\uB2C8 \uD78C\uD2B8\uB97C
       \uBCF4\uACE0 \uC798 \uCC3E\uC544\uC11C \uC2A4\uD0EC\uD504\uB97C \uCC0D\uC5B4\uC640!"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   npcDialogue: {fileID: 209511711}
   userDialogue: {fileID: 1511798041}

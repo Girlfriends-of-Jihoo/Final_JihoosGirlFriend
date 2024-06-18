@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class StairScene : MonoBehaviour
 {
     [SerializeField] private Animator coneAnimator;
+    [SerializeField] private GameObject cone;
     [SerializeField] private Animator mapAnimator;
     [SerializeField] private Animator stampAnimator;
     [SerializeField] private GameObject mapButton;
@@ -61,7 +62,11 @@ public class StairScene : MonoBehaviour
 
     void Update()
     {
-        if (InsideSceneManager.manager.CheckIsNavigationEnd() && stampAnimator.GetBool("isEnd"))
+        if (ChatManager.manager.stair2)
+        {
+            cone.SetActive(false);
+        }
+        else if (InsideSceneManager.manager.CheckIsNavigationEnd() && stampAnimator.GetBool("isEnd"))
         {
             ChangeStampColor();
         }
@@ -96,6 +101,7 @@ public class StairScene : MonoBehaviour
         mapModal.SetActive(false);
         ChatManager.manager.stair2 = false;
         secondChat.SetActive(true);
+        cone.SetActive(false);
     }
 
     public void SceneChange(string name)
