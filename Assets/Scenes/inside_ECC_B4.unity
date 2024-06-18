@@ -13846,6 +13846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coneAnimator: {fileID: 372237907}
+  cone: {fileID: 372237898}
   mapAnimator: {fileID: 588018977}
   stampAnimator: {fileID: 720298236}
   mapButton: {fileID: 588018975}
@@ -15234,14 +15235,16 @@ MonoBehaviour:
   starbucks: 0
   ecc_stairs: 0
   gong_b2: 0
+  library: 0
   starbucks_reached: 0
   ecc_stairs_reached: 0
   gong_b2_reached: 0
+  library_reached: 0
   ECC_STARBUCKS: inside_ECC_B4
   ECC_STAIRS: inside_ECC
-  GONG_3F: inside_GONG_ASAN3
-  GONG_1F: inside_GONG_ASAN1
   GONG_B2F: inside_GONG_SIN_B2
+  LIBRARY: inside_Library
+  isClicked: 0
 --- !u!4 &658220068
 Transform:
   m_ObjectHideFlags: 0

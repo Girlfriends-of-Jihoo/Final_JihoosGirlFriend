@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class StairScene : MonoBehaviour
 {
     [SerializeField] private Animator coneAnimator;
+    [SerializeField] private GameObject cone;
     [SerializeField] private Animator mapAnimator;
     [SerializeField] private Animator stampAnimator;
     [SerializeField] private GameObject mapButton;
@@ -17,6 +18,7 @@ public class StairScene : MonoBehaviour
     [SerializeField] private Image[] stamp_prev;
     [SerializeField] private Image stamp;
     private bool isFirstChatStart = false;
+    private bool getStamp = false;
 
     void Start()
     {
@@ -61,7 +63,11 @@ public class StairScene : MonoBehaviour
 
     void Update()
     {
-        if (InsideSceneManager.manager.CheckIsNavigationEnd() && stampAnimator.GetBool("isEnd"))
+        if (ChatManager.manager.stair2)
+        {
+            cone.SetActive(false);
+        }
+        else if (InsideSceneManager.manager.CheckIsNavigationEnd() && stampAnimator.GetBool("isEnd"))
         {
             ChangeStampColor();
         }
@@ -86,6 +92,7 @@ public class StairScene : MonoBehaviour
     {
         stamp.color = new Color(255f, 255f, 255f, 1f); // 변경할 색상을 설정합니다.
         PlayerPrefs.SetInt("Stair", 1); // 스탬프 획득 여부를 저장합니다.
+        getStamp = true;
 
         // 1초 뒤에 chatModal 활성화
         Invoke(nameof(ShowChat), 1f);
@@ -96,6 +103,7 @@ public class StairScene : MonoBehaviour
         mapModal.SetActive(false);
         ChatManager.manager.stair2 = false;
         secondChat.SetActive(true);
+        cone.SetActive(false);
     }
 
     public void SceneChange(string name)

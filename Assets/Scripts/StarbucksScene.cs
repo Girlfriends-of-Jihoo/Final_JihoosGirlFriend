@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class StarbucksScene : MonoBehaviour
 {
     [SerializeField] private Animator coneAnimator;
+    [SerializeField] private GameObject cone;
     [SerializeField] private Animator mapAnimator;
     [SerializeField] private Animator stampAnimator;
     [SerializeField] private GameObject mapButton;
@@ -60,6 +61,7 @@ public class StarbucksScene : MonoBehaviour
         if (ChatManager.manager.starbucks2)
         {
             hintModal.SetActive(true);
+            cone.SetActive(false);
         }
         else if (InsideSceneManager.manager.CheckIsNavigationEnd() && stampAnimator.GetBool("isEnd"))
         {
@@ -97,6 +99,7 @@ public class StarbucksScene : MonoBehaviour
         mapModal.SetActive(false);
         ChatManager.manager.starbucks2 = false;
         secondChat.SetActive(true);
+        cone.SetActive(false);
     }
 
     public void SceneChange(string name)
