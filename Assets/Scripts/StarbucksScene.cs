@@ -30,7 +30,7 @@ public class StarbucksScene : MonoBehaviour
         }
         else
         {
-            stamp.color = new Color(0f, 0f, 0f, 1f);
+            stamp.color = new Color(255f, 255f, 255f, 0.5f);
         }
         
         if (ChatManager.manager.starbucks2)

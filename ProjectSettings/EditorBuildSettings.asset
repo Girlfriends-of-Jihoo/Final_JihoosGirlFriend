@@ -6,32 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start.unity
-    guid: 19e30945dc371d248ae61025f1c9c627
-  - enabled: 1
     path: Assets/Scenes/1_Main.unity
     guid: 053285b097d964fceb2dadb94bbe4514
   - enabled: 1
-    path: Assets/Scenes/ECC.unity
-    guid: 950657e7e63f3104b929d07ef8da656c
-  - enabled: 1
-    path: Assets/Scenes/AR_Hint_ECC1.unity
-    guid: 022a9e17080c89248bf132fdb1a63ff6
-  - enabled: 1
-    path: Assets/Scenes/inside_ECC_B4.unity
-    guid: 5f648372bb08e47bc914d69a38014f06
-  - enabled: 1
     path: Assets/Scenes/AR_ECC1.unity
     guid: ce31d2932cf376246a3c9132b801782a
-  - enabled: 1
-    path: Assets/Scenes/inside_ECC.unity
-    guid: 68ae4005311102e448aca261020f1e2c
   - enabled: 1
     path: Assets/Scenes/AR_ECC2.unity
     guid: 4cce9ad03fe9ff64889f358ff8d69002
   - enabled: 1
     path: Assets/Scenes/AR_ENG.unity
     guid: 126e5ff3264120e4dae9f0409019f976
+  - enabled: 1
+    path: Assets/Scenes/AR_Hint_ECC1.unity
+    guid: 022a9e17080c89248bf132fdb1a63ff6
   - enabled: 1
     path: Assets/Scenes/AR_Hint_ECC2.unity
     guid: 7b1a5066df37fd6478ec669f925e374a
@@ -45,9 +33,39 @@ EditorBuildSettings:
     path: Assets/Scenes/AR_Library.unity
     guid: 04cd0c986fbd63b44983a05e766f3883
   - enabled: 1
+    path: Assets/Scenes/ECC.unity
+    guid: 950657e7e63f3104b929d07ef8da656c
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: a83077576736a0e44a00b014151f3fee
   - enabled: 1
+    path: Assets/Scenes/GONG.unity
+    guid: 597625bab2adc3847aa8865321cf7129
+  - enabled: 1
+    path: Assets/Scenes/inside_ECC.unity
+    guid: 68ae4005311102e448aca261020f1e2c
+  - enabled: 1
+    path: Assets/Scenes/inside_ECC_B4.unity
+    guid: 5f648372bb08e47bc914d69a38014f06
+  - enabled: 1
+    path: Assets/Scenes/inside_GONG_ASAN1.unity
+    guid: b628dd4cd97424044ae1150dab504002
+  - enabled: 1
+    path: Assets/Scenes/inside_GONG_ASAN3.unity
+    guid: a9cd9efba5c60ba40816a6cc1b8b37b3
+  - enabled: 1
+    path: Assets/Scenes/inside_GONG_SIN_B2.unity
+    guid: 16262f3f9f8010f419d1ea8afde914a1
+  - enabled: 1
+    path: Assets/Scenes/inside_Library.unity
+    guid: 36733c5b0f52cb7439097ffeadf49317
+  - enabled: 1
+    path: Assets/Scenes/inside_Library_1 1.unity
+    guid: 95112094d254f014082badf0d7c64507
+  - enabled: 1
     path: Assets/Scenes/Library.unity
     guid: 81e2260f6ef0e9a44ad6485e69528ed2
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 19e30945dc371d248ae61025f1c9c627
   m_configObjects: {}

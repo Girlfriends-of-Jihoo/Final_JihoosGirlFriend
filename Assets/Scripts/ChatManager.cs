@@ -10,7 +10,8 @@ class ChatManager : MonoBehaviour
     public bool stair1 = false;
     public bool stair2 = false;
     public bool library = false;
-    public bool gong = false;
+    public bool gong1 = false;
+    public bool gong2 = false;
 
     private void Awake() {
         if(manager == null)

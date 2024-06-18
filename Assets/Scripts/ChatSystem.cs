@@ -29,7 +29,7 @@ public class ChatSystem : MonoBehaviour
     private string STARBUCKS = "inside_ECC_B4";
     private string STAIR = "inside_ECC";
     private string LIBRARY = "Library";
-    private string GONG = "GONG";
+    private string GONG = "inside_GONG_SIN_B2";
 
     public void ShowDialogue()
     {
@@ -105,7 +105,6 @@ public class ChatSystem : MonoBehaviour
                 }
             }
         }
-
         cnt++;
     }
 
@@ -147,7 +146,14 @@ public class ChatSystem : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == GONG)
         {
-            ChatManager.manager.gong = true;
+            if (InsideSceneManager.manager.CheckIsNavigationEnd())
+            {
+                ChatManager.manager.gong2 = true;
+            }
+            else
+            {
+                ChatManager.manager.gong1 = true;
+            }
         }
     }
 
@@ -175,7 +181,7 @@ public class ChatSystem : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == GONG)
         {
-            return ChatManager.manager.gong;
+            return ChatManager.manager.gong1 && ChatManager.manager.gong2;
         }
         return false;
     }
