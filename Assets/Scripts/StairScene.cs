@@ -18,7 +18,6 @@ public class StairScene : MonoBehaviour
     [SerializeField] private Image[] stamp_prev;
     [SerializeField] private Image stamp;
     private bool isFirstChatStart = false;
-    private bool getStamp = false;
 
     void Start()
     {
@@ -92,7 +91,6 @@ public class StairScene : MonoBehaviour
     {
         stamp.color = new Color(255f, 255f, 255f, 1f); // 변경할 색상을 설정합니다.
         PlayerPrefs.SetInt("Stair", 1); // 스탬프 획득 여부를 저장합니다.
-        getStamp = true;
 
         // 1초 뒤에 chatModal 활성화
         Invoke(nameof(ShowChat), 1f);
