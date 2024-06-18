@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e2b847d3c3dfb416c8dfd5387a1a56a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0dcf113ce19566048b95fb240265c615, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1085,7 +1085,8 @@ MonoBehaviour:
   starbucks2: 0
   stair1: 0
   stair2: 0
-  library: 0
+  media1: 0
+  media2: 0
   gong1: 0
   gong2: 0
 --- !u!4 &290574340
@@ -4232,8 +4233,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 125.67822, y: -10}
-  m_SizeDelta: {x: -251.3564, y: 180}
+  m_AnchoredPosition: {x: 150, y: -10}
+  m_SizeDelta: {x: -300, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1472769187
 MonoBehaviour:
@@ -4255,7 +4256,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: dkdkdk
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5da1ec86ae8f64c2aa8a8e41e590c96b, type: 2}
   m_sharedMaterial: {fileID: 7823269943175765131, guid: 5da1ec86ae8f64c2aa8a8e41e590c96b, type: 2}
