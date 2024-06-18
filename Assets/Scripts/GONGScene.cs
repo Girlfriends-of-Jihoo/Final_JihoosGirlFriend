@@ -8,33 +8,21 @@ public class GONGScene : MonoBehaviour
 {
     [SerializeField] private Animator mapAnimator;
     [SerializeField] private GameObject modal;
+    [SerializeField] private GameObject mapButton;
     [SerializeField] private ChatSystem chatSystem;
-
-    void Start()
-    {
-        mapAnimator.SetBool("stop", true);
-    }
 
     void Update()
     {
         if (!chatSystem.isDialogue)
         {
-            modal.SetActive(true);
+        modal.SetActive(true);
+        mapButton.SetActive(true);
+        mapAnimator.SetBool("stop", true);
         }
     }
 
-    public void SceneChange()
+    public void SceneChange(string name)
     {
-        SceneManager.LoadScene("inside_ASAN3");
-    }
-
-    public void SceneChange_AR()
-    {
-        SceneManager.LoadScene("AR_ECC");
-    }
-
-    public void SceneChange_GONG()
-    {
-        SceneManager.LoadScene("GONG");
+        SceneManager.LoadScene(name);
     }
 }
