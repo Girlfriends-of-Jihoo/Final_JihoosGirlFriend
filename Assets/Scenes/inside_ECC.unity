@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18029787, g: 0.22574161, b: 0.30695823, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028481, g: 0.22571452, b: 0.30692214, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -25884,15 +25884,15 @@ MonoBehaviour:
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "\uC789\uC5EC\uACC4\uB2E8\uC740 \uC5B4\uB560\uC5B4? \uB215\uACE0\uC2F6\uC9C0
       \uC54A\uC558\uB2C8?"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "\uB300\uD654 2"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   - name: "\uC774\uD654\uC5EC\uB2C8 (4\uD559\uB144)"
     sentences: "\uB300\uD654 3"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   npcDialogue: {fileID: 1420030507}
   userDialogue: {fileID: 1642344928}
@@ -39203,7 +39203,7 @@ MonoBehaviour:
     sentences: "\uBAA9\uC801\uC9C0 \uB9C8\uCEE4\uB97C \uD074\uB9AD\uD558\uBA74 \uBAA9\uC801\uC9C0\uAE4C\uC9C0
       \uAC00\uB294 \uBC29\uD5A5\uC744 \uD655\uC778\uD560 \uC218 \uC788\uB294 \uCE74\uBA54\uB77C\uAC00
       \uC2DC\uC791\uB420\uAC70\uC57C!"
-    image: {fileID: 21300000, guid: f58e13d4d28f6424b95142f432ff75da, type: 3}
+    image: {fileID: 21300000, guid: 4f67737b5881efe4e8929e55c6c78e5d, type: 3}
     isNPC: 1
   npcDialogue: {fileID: 2140034637}
   userDialogue: {fileID: 1642344928}
