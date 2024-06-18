@@ -29,7 +29,7 @@ public class ClickFlower_ECC2 : MonoBehaviour
         }
         else if (currentSceneName == "AR_Library")
         {
-            SceneManager.LoadScene("inside_Library_1 1");
+            SceneManager.LoadScene("inside_Library");
         }
     }
 }

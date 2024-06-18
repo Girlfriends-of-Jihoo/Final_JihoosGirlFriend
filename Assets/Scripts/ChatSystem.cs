@@ -26,10 +26,12 @@ public class ChatSystem : MonoBehaviour
     private int cnt = 0;
     private string MAIN = "1_Main";
     private string ECC = "ECC";
+    private string LIBRARY = "Library";
+    private string GONG = "GONG";
     private string STARBUCKS = "inside_ECC_B4";
     private string STAIR = "inside_ECC";
-    private string LIBRARY = "Library";
-    private string GONG = "inside_GONG_SIN_B2";
+    private string MEDIA = "inside_Library";
+    private string TEAMPROJECT = "inside_GONG_SIN_B2";
 
     public void ShowDialogue()
     {
@@ -118,6 +120,14 @@ public class ChatSystem : MonoBehaviour
         {
             ChatManager.manager.main = true;
         }
+        else if (SceneManager.GetActiveScene().name == LIBRARY)
+        {
+            ChatManager.manager.library = true;
+        }
+        else if (SceneManager.GetActiveScene().name == GONG)
+        {
+            ChatManager.manager.gong = true;
+        }
         else if (SceneManager.GetActiveScene().name == STARBUCKS)
         {
             if (InsideSceneManager.manager.CheckIsNavigationEnd())
@@ -140,11 +150,18 @@ public class ChatSystem : MonoBehaviour
                 ChatManager.manager.stair1 = true;
             }
         }
-        else if (SceneManager.GetActiveScene().name == LIBRARY)
+        else if (SceneManager.GetActiveScene().name == MEDIA)
         {
-            ChatManager.manager.library = true;
+            if (InsideSceneManager.manager.CheckIsNavigationEnd())
+            {
+                ChatManager.manager.media2 = true;
+            }
+            else
+            {
+                ChatManager.manager.media1 = true;
+            }
         }
-        else if (SceneManager.GetActiveScene().name == GONG)
+        else if (SceneManager.GetActiveScene().name == TEAMPROJECT)
         {
             if (InsideSceneManager.manager.CheckIsNavigationEnd())
             {
@@ -167,6 +184,14 @@ public class ChatSystem : MonoBehaviour
         {
             return ChatManager.manager.main;
         }
+        else if (SceneManager.GetActiveScene().name == LIBRARY)
+        {
+            return ChatManager.manager.library;
+        }
+        else if (SceneManager.GetActiveScene().name == GONG)
+        {
+            return ChatManager.manager.gong;
+        }
         else if (SceneManager.GetActiveScene().name == STARBUCKS)
         {
             return ChatManager.manager.starbucks1 && ChatManager.manager.starbucks2;
@@ -175,11 +200,11 @@ public class ChatSystem : MonoBehaviour
         {
             return ChatManager.manager.stair1 && ChatManager.manager.stair2;
         }
-        else if (SceneManager.GetActiveScene().name == LIBRARY)
+        else if (SceneManager.GetActiveScene().name == MEDIA)
         {
-            return ChatManager.manager.library;
+            return ChatManager.manager.media1 && ChatManager.manager.media2;
         }
-        else if (SceneManager.GetActiveScene().name == GONG)
+        else if (SceneManager.GetActiveScene().name == TEAMPROJECT)
         {
             return ChatManager.manager.gong1 && ChatManager.manager.gong2;
         }
